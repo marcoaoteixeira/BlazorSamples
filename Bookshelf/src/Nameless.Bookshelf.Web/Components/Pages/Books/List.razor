@@ -1,0 +1,11 @@
+﻿@page "/books"
+
+<h1>Livros</h1>
+
+<QuickGrid TGridItem="BookDto" ItemsProvider="BookGridItemsProvider" Pagination="PaginationState">
+    <PropertyColumn Title="Título" Property="book => book.Title" />
+    <PropertyColumn Title="Resenha" Property="book => book.Overview" />
+    <PropertyColumn Title="Data de Publicação" Property="book => book.PublishDate" />
+    <PropertyColumn Title="Nota" Property="book => book.Rating" />
+</QuickGrid>
+<Paginator State="PaginationState" />

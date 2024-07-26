@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Bookshelf.Web", "src\Nameless.Bookshelf.Web\Nameless.Bookshelf.Web.csproj", "{98B5A110-B291-4B03-ABEF-531C8197516B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Bookshelf.Application", "src\Nameless.Bookshelf.Application\Nameless.Bookshelf.Application.csproj", "{8E5EB12D-2903-4C65-88C0-D96F1E91F871}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Bookshelf.Domain", "src\Nameless.Bookshelf.Domain\Nameless.Bookshelf.Domain.csproj", "{B488D40C-B380-406B-AB98-61C7773D7232}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Bookshelf.Infrastructure", "src\Nameless.Bookshelf.Infrastructure\Nameless.Bookshelf.Infrastructure.csproj", "{426E983A-B42A-45CD-ADA8-CA43737CD172}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Bookshelf.Contracts", "src\Nameless.Bookshelf.Contracts\Nameless.Bookshelf.Contracts.csproj", "{E7BDF863-D221-4646-9701-171F158A8D90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A633E0ED-DB6C-4DE0-8194-D7BD5152A734}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{29E7FB48-718C-475C-80DE-0A73064824EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B5A110-B291-4B03-ABEF-531C8197516B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B5A110-B291-4B03-ABEF-531C8197516B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B5A110-B291-4B03-ABEF-531C8197516B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B5A110-B291-4B03-ABEF-531C8197516B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5EB12D-2903-4C65-88C0-D96F1E91F871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5EB12D-2903-4C65-88C0-D96F1E91F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5EB12D-2903-4C65-88C0-D96F1E91F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5EB12D-2903-4C65-88C0-D96F1E91F871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B488D40C-B380-406B-AB98-61C7773D7232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B488D40C-B380-406B-AB98-61C7773D7232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B488D40C-B380-406B-AB98-61C7773D7232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B488D40C-B380-406B-AB98-61C7773D7232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426E983A-B42A-45CD-ADA8-CA43737CD172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426E983A-B42A-45CD-ADA8-CA43737CD172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426E983A-B42A-45CD-ADA8-CA43737CD172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426E983A-B42A-45CD-ADA8-CA43737CD172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BDF863-D221-4646-9701-171F158A8D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BDF863-D221-4646-9701-171F158A8D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BDF863-D221-4646-9701-171F158A8D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BDF863-D221-4646-9701-171F158A8D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98B5A110-B291-4B03-ABEF-531C8197516B} = {A633E0ED-DB6C-4DE0-8194-D7BD5152A734}
+		{8E5EB12D-2903-4C65-88C0-D96F1E91F871} = {A633E0ED-DB6C-4DE0-8194-D7BD5152A734}
+		{B488D40C-B380-406B-AB98-61C7773D7232} = {A633E0ED-DB6C-4DE0-8194-D7BD5152A734}
+		{426E983A-B42A-45CD-ADA8-CA43737CD172} = {A633E0ED-DB6C-4DE0-8194-D7BD5152A734}
+		{E7BDF863-D221-4646-9701-171F158A8D90} = {A633E0ED-DB6C-4DE0-8194-D7BD5152A734}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EA0391F-305F-4F01-80C2-669739A32725}
+	EndGlobalSection
+EndGlobal

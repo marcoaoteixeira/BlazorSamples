@@ -1,0 +1,49 @@
+﻿<h3>@GetFormTitle()</h3>
+
+<EditForm FormName="BookForm" Model="Model" OnSubmit="@HandleFormSubmitAsync" class="row g-3">
+    @if (!string.IsNullOrWhiteSpace(ID)) {
+        <InputText @bind-Value="ID" hidden/>
+    }
+    
+    <div class="input-group mb-3 col-12">
+        <label for="title">
+            Título:
+            <InputText id="title" class="form-control" @bind-Value="Model.Title"></InputText>
+        </label>
+    </div>
+    
+    <div class="input-group mb-3 col-12">
+        <label for="overview">Resenha:
+            <InputTextArea id="overview" class="form-control" @bind-Value="Model.Overview"></InputTextArea>
+        </label>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <label for="publish-date">Data de Publicação:
+                    <InputDate id="publish-date" class="form-control" @bind-Value="Model.PublishDate"></InputDate>
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <label for="rating">Avaliação:
+                    <InputNumber id="rating" class="form-control" TValue="double?" @bind-Value="Model.Rating"></InputNumber>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+    private string GetFormTitle() {
+        return string.IsNullOrWhiteSpace(ID)
+            ? "Criar uma nova entrada"
+            : $"Editar livro: {Model?.Title}";
+    }
+}
